@@ -7,6 +7,6 @@ latexmk, pdflatex, tlmgr,... the whole shebang in one huge OCI-image.
 ```shell
 docker run -it -u $(id -u):$(id -g) \
   --volume="$(pwd)":/workspace --workdir=/workspace  \
-  schnatterer/texlive-full \
+  ghcr.io/schnatterer/texlive-full \
   latexmk
 ```
