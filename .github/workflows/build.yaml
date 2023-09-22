@@ -1,7 +1,8 @@
 name: Trigger release on new Helm version
 on:
   schedule:
-    - cron:  '30 4 * * *'
+    # Rebuild once a week
+    - cron:  '0 0 * * 0'
   push:
     branches: [ main ]
   pull_request:
