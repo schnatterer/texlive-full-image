@@ -1,11 +1,9 @@
-name: Trigger release on new Helm version
+name: Push image
 on:
   schedule:
     # Rebuild once a week
     - cron:  '0 0 * * 0'
   push:
-    branches: [ main ]
-  pull_request:
     branches: [ main ]
 
   # Allow running this workflow manually from the Actions tab
